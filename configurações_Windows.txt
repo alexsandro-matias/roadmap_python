@@ -1,0 +1,11 @@
+# Para verificar se o Python foi instalado com sucesso.
+python --version
+
+# Criação do ambiente virtual chamando "ambiente"
+python -m venv ambiente
+
+Porém se tentarmos ativar esse ambiente:
+.\ambiente\Scripts\activate
+
+o Powershell não dará permissão de execução deste comando. Para liberarmos o acesso, teremos que liberar apenas para a execução da criação do ambiente virtual em Python:
+Set-ExecutionPolicy AllSigned -Force
